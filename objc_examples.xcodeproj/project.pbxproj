@@ -10,6 +10,7 @@
 		57C6D5A0800DACBC8C0B3208 /* Pods_objc_examples_objc_examplesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CF65C0471E75217DE6A0B3 /* Pods_objc_examples_objc_examplesUITests.framework */; };
 		929DD8565BE9BD7742486E6E /* Pods_objc_examplesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B3FE9664FAEF552372D9B0 /* Pods_objc_examplesTests.framework */; };
 		9800CA3B7ADF4C5C9C5AC17A /* Pods_objc_examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AEE125D476EA9753D2F55D /* Pods_objc_examples.framework */; };
+		F50DA95F263D201F00D7FDDF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F50DA95E263D201F00D7FDDF /* README.md */; };
 		F515426F263ABDC000E8C516 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F515426E263ABDC000E8C516 /* AppDelegate.m */; };
 		F5154272263ABDC000E8C516 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154271263ABDC000E8C516 /* SceneDelegate.m */; };
 		F5154275263ABDC000E8C516 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154274263ABDC000E8C516 /* HomeViewController.m */; };
@@ -52,6 +53,7 @@
 		7C4B9F11E279A1F1D52ABF58 /* Pods-objc_examplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objc_examplesTests.debug.xcconfig"; path = "Target Support Files/Pods-objc_examplesTests/Pods-objc_examplesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7DD9DDF7ECC1906F8A7ACA4 /* Pods-objc_examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objc_examples.release.xcconfig"; path = "Target Support Files/Pods-objc_examples/Pods-objc_examples.release.xcconfig"; sourceTree = "<group>"; };
 		A9C21A38D285D88D2A7E0BC2 /* Pods-objc_examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objc_examples.debug.xcconfig"; path = "Target Support Files/Pods-objc_examples/Pods-objc_examples.debug.xcconfig"; sourceTree = "<group>"; };
+		F50DA95E263D201F00D7FDDF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F515426A263ABDC000E8C516 /* objc_examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objc_examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F515426D263ABDC000E8C516 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F515426E263ABDC000E8C516 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		F5154261263ABDC000E8C516 = {
 			isa = PBXGroup;
 			children = (
+				F50DA95E263D201F00D7FDDF /* README.md */,
 				F552991D263D1AC300B5CAF5 /* .env */,
 				F515426C263ABDC000E8C516 /* objc_examples */,
 				F5154288263ABDC100E8C516 /* objc_examplesTests */,
@@ -326,6 +329,7 @@
 				F5811704263AC2A300468965 /* Localizable.strings in Resources */,
 				F515427D263ABDC100E8C516 /* LaunchScreen.storyboard in Resources */,
 				F58116EC263AC0BA00468965 /* InfoPlist.strings in Resources */,
+				F50DA95F263D201F00D7FDDF /* README.md in Resources */,
 				F552991E263D1AC300B5CAF5 /* .env in Resources */,
 				F515427A263ABDC100E8C516 /* Assets.xcassets in Resources */,
 				F5154278263ABDC000E8C516 /* Main.storyboard in Resources */,

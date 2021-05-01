@@ -6,8 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#import <GooglePlaces/GMSPlacesClient.h>
-#import <GoogleMaps/GMSServices.h>
 
 @interface AppDelegate ()
 

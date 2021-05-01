@@ -6,6 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlaces/GMSPlacesClient.h>
+#import <GoogleMaps/GMSServices.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
