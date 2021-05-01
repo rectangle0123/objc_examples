@@ -6,6 +6,8 @@
 //
 
 #import "AppDelegate.h"
+#import <GooglePlaces/GMSPlacesClient.h>
+#import <GoogleMaps/GMSServices.h>
 
 @interface AppDelegate ()
 
@@ -15,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // GoogleマップのAPIキーをアプリケーションに追加する
+    NSString *apiKey = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"GoogleMapsAPIKey"];
+    [GMSPlacesClient provideAPIKey:apiKey];
+    [GMSServices provideAPIKey:apiKey];
+
     // Override point for customization after application launch.
     return YES;
 }

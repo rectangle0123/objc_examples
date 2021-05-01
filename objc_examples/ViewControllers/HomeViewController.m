@@ -7,6 +7,7 @@
 
 #import "HomeViewController.h"
 #import "WebViewController.h"
+#import "GoogleMapsViewController.h"
 
 @interface HomeViewController () {
     // TableView
@@ -98,16 +99,20 @@
             }
             case 1: {
                 // WebViewの表示
-                WebViewController *wc = [WebViewController alloc];
-                [self.navigationController pushViewController:wc animated:YES];
+                WebViewController *vc = [WebViewController alloc];
+                [self.navigationController pushViewController:vc animated:YES];
             }
             default:
                 break;
         }
     } else if (indexPath.section == 1) {
         switch (indexPath.row) {
-            case 0:
+            case 0: {
+                // Googleマップの表示
+                GoogleMapsViewController *vc = [GoogleMapsViewController alloc];
+                [self.navigationController pushViewController:vc animated:YES];
                 break;
+            }
             default:
                 break;
         }

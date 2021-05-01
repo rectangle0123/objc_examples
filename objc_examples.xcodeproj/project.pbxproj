@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,8 @@
 		F515428A263ABDC100E8C516 /* objc_examplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154289263ABDC100E8C516 /* objc_examplesTests.m */; };
 		F5154295263ABDC100E8C516 /* objc_examplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154294263ABDC100E8C516 /* objc_examplesUITests.m */; };
 		F54F3906263CFF39002F71FB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F3905263CFF39002F71FB /* WebViewController.m */; };
+		F54F390C263D02C3002F71FB /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */; };
+		F552991E263D1AC300B5CAF5 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = F552991D263D1AC300B5CAF5 /* .env */; };
 		F58116EC263AC0BA00468965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58116EE263AC0BA00468965 /* InfoPlist.strings */; };
 		F5811704263AC2A300468965 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5811706263AC2A300468965 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,9 @@
 		F5154296263ABDC100E8C516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F54F3904263CFF39002F71FB /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		F54F3905263CFF39002F71FB /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		F54F390A263D02C3002F71FB /* GoogleMapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
+		F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
+		F552991D263D1AC300B5CAF5 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		F58116ED263AC0BA00468965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F58116F2263AC0BF00468965 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5811705263AC2A300468965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -144,6 +149,8 @@
 				F5154274263ABDC000E8C516 /* HomeViewController.m */,
 				F54F3904263CFF39002F71FB /* WebViewController.h */,
 				F54F3905263CFF39002F71FB /* WebViewController.m */,
+				F54F390A263D02C3002F71FB /* GoogleMapsViewController.h */,
+				F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		F5154261263ABDC000E8C516 = {
 			isa = PBXGroup;
 			children = (
+				F552991D263D1AC300B5CAF5 /* .env */,
 				F515426C263ABDC000E8C516 /* objc_examples */,
 				F5154288263ABDC100E8C516 /* objc_examplesTests */,
 				F5154293263ABDC100E8C516 /* objc_examplesUITests */,
@@ -216,7 +224,9 @@
 				8DAF1314241715A240B1809F /* [CP] Check Pods Manifest.lock */,
 				F5154266263ABDC000E8C516 /* Sources */,
 				F5154267263ABDC000E8C516 /* Frameworks */,
+				F54F3918263D1841002F71FB /* 環境依存ファイルの読み込み */,
 				F5154268263ABDC000E8C516 /* Resources */,
+				0E7650D1612727ECEC0BB002 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +264,7 @@
 				F515428C263ABDC100E8C516 /* Sources */,
 				F515428D263ABDC100E8C516 /* Frameworks */,
 				F515428E263ABDC100E8C516 /* Resources */,
+				B29237EF9B19FD0EBCE7929F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,6 +326,7 @@
 				F5811704263AC2A300468965 /* Localizable.strings in Resources */,
 				F515427D263ABDC100E8C516 /* LaunchScreen.storyboard in Resources */,
 				F58116EC263AC0BA00468965 /* InfoPlist.strings in Resources */,
+				F552991E263D1AC300B5CAF5 /* .env in Resources */,
 				F515427A263ABDC100E8C516 /* Assets.xcassets in Resources */,
 				F5154278263ABDC000E8C516 /* Main.storyboard in Resources */,
 			);
@@ -337,6 +349,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E7650D1612727ECEC0BB002 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-objc_examples/Pods-objc_examples-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-objc_examples/Pods-objc_examples-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-objc_examples/Pods-objc_examples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7E9CA27C6D7DFC87B3EE97ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,6 +410,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B29237EF9B19FD0EBCE7929F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-objc_examples-objc_examplesUITests/Pods-objc_examples-objc_examplesUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-objc_examples-objc_examplesUITests/Pods-objc_examples-objc_examplesUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-objc_examples-objc_examplesUITests/Pods-objc_examples-objc_examplesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B69E7CA32FA2DE28984ABC89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +449,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F54F3918263D1841002F71FB /* 環境依存ファイルの読み込み */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${TEMP_DIR}/Preprocessed-Info.plist",
+			);
+			name = "環境依存ファイルの読み込み";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 先読したInfo.plist\ninfoPlistFileDestination=\"${TEMP_DIR}/Preprocessed-Info.plist\"\n\n# .envの読み込み\n. .env\n\n# 先読したInfo.plistに値を追加\nplistBuddy=\"/usr/libexec/PlistBuddy\"\n$plistBuddy -c \"Set :GoogleMapsAPIKey ${GOOGLE_MAPS_API_KEY}\" \"${infoPlistFileDestination}\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -414,6 +479,7 @@
 				F54F3906263CFF39002F71FB /* WebViewController.m in Sources */,
 				F515426F263ABDC000E8C516 /* AppDelegate.m in Sources */,
 				F5154280263ABDC100E8C516 /* main.m in Sources */,
+				F54F390C263D02C3002F71FB /* GoogleMapsViewController.m in Sources */,
 				F5154272263ABDC000E8C516 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +676,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQHHY52ZAD;
 				INFOPLIST_FILE = objc_examples/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,6 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQHHY52ZAD;
 				INFOPLIST_FILE = objc_examples/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

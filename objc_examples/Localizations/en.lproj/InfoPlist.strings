@@ -6,3 +6,4 @@
   
 */
 CFBundleDisplayName = "OBJC Examples";
+NSLocationWhenInUseUsageDescription = "Only for use in showing your current location ont the map.";

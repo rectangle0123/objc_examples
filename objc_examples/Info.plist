@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GoogleMapsAPIKey</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Only for use in showing your current location ont the map.</string>
 	<key>CFBundleDisplayName</key>
 	<string>OBJC Examples</string>
 	<key>CFBundleDevelopmentRegion</key>
