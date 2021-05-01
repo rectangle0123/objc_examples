@@ -6,6 +6,7 @@
 //
 
 #import "HomeViewController.h"
+#import "WebViewController.h"
 
 @interface HomeViewController () {
     // TableView
@@ -26,6 +27,7 @@
     // タイトル表示
     NSString *appName = [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:@"CFBundleDisplayName"];
     self.title = appName;
+
     // TableViewDataSourceを初期化する
     sections = @[
         NSLocalizedString(@"page_section_basic", nil),
@@ -40,6 +42,7 @@
             NSLocalizedString(@"page_title_googlemaps", nil),
         ]
     ];
+
     // TableViewを作成する
     tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     tableView.delegate = self;
@@ -88,18 +91,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         switch (indexPath.row) {
-            case 0:
+            case 0: {
                 // ダイアログの表示
                 [self showDialog];
                 break;
+            }
+            case 1: {
+                // WebViewの表示
+                WebViewController *wc = [WebViewController alloc];
+                [self.navigationController pushViewController:wc animated:YES];
+            }
             default:
                 break;
         }
     } else if (indexPath.section == 1) {
         switch (indexPath.row) {
             case 0:
-                break;
-            case 1:
                 break;
             default:
                 break;

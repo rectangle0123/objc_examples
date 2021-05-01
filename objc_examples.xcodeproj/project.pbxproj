@@ -19,6 +19,7 @@
 		F5154280263ABDC100E8C516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F515427F263ABDC100E8C516 /* main.m */; };
 		F515428A263ABDC100E8C516 /* objc_examplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154289263ABDC100E8C516 /* objc_examplesTests.m */; };
 		F5154295263ABDC100E8C516 /* objc_examplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154294263ABDC100E8C516 /* objc_examplesUITests.m */; };
+		F54F3906263CFF39002F71FB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F3905263CFF39002F71FB /* WebViewController.m */; };
 		F58116EC263AC0BA00468965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58116EE263AC0BA00468965 /* InfoPlist.strings */; };
 		F5811704263AC2A300468965 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5811706263AC2A300468965 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,8 @@
 		F5154290263ABDC100E8C516 /* objc_examplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objc_examplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5154294263ABDC100E8C516 /* objc_examplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_examplesUITests.m; sourceTree = "<group>"; };
 		F5154296263ABDC100E8C516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54F3904263CFF39002F71FB /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		F54F3905263CFF39002F71FB /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		F58116ED263AC0BA00468965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F58116F2263AC0BF00468965 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5811705263AC2A300468965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 			children = (
 				F5154273263ABDC000E8C516 /* HomeViewController.h */,
 				F5154274263ABDC000E8C516 /* HomeViewController.m */,
+				F54F3904263CFF39002F71FB /* WebViewController.h */,
+				F54F3905263CFF39002F71FB /* WebViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5154275263ABDC000E8C516 /* HomeViewController.m in Sources */,
+				F54F3906263CFF39002F71FB /* WebViewController.m in Sources */,
 				F515426F263ABDC000E8C516 /* AppDelegate.m in Sources */,
 				F5154280263ABDC100E8C516 /* main.m in Sources */,
 				F5154272263ABDC000E8C516 /* SceneDelegate.m in Sources */,
