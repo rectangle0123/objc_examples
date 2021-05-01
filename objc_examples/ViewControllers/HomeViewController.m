@@ -47,6 +47,13 @@
     [self.view addSubview:tableView];
 }
 
+// ダイアログを表示する
+- (void)showDialog {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"home_dialog_title", nil) message:NSLocalizedString(@"home_dialog_message", nil) preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 #pragma mark - UITableViewDataSource
 
 // セクションの数を返す
@@ -75,6 +82,29 @@
     cell.textLabel.text = titles[indexPath.section][indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+// セルの選択アクション
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+                // ダイアログの表示
+                [self showDialog];
+                break;
+            default:
+                break;
+        }
+    } else if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0:
+                break;
+            case 1:
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 @end

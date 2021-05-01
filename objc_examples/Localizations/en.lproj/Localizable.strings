@@ -15,7 +15,8 @@
 "page_title_googlemaps" = "Google Maps";
 
 // ホーム画面
-"home_message" = "Hello, World!";
+"home_dialog_title" = "Message";
+"home_dialog_message" = "Hello, World!";
 
 // Googleマップ画面
 "gmaps_marker_title" = "Nihonbashi Sta.";

@@ -15,7 +15,8 @@
 "page_title_googlemaps" = "Googleマップ";
 
 // ホーム画面
-"home_message" = "みなさん、こんにちわ！";
+"home_dialog_title" = "メッセージ";
+"home_dialog_message" = "みなさん、こんにちわ！";
 
 // Googleマップ画面
 "gmaps_marker_title" = "日本橋駅";
