@@ -13,6 +13,7 @@
 "page_title_dialog" = "ダイアログ";
 "page_title_webview" = "WebView";
 "page_title_googlemaps" = "Googleマップ";
+"page_title_images" = "画像";
 
 // ホーム画面
 "home_dialog_title" = "メッセージ";

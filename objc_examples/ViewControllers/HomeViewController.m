@@ -8,6 +8,7 @@
 #import "HomeViewController.h"
 #import "WebViewController.h"
 #import "GoogleMapsViewController.h"
+#import "ImageViewController.h"
 
 @interface HomeViewController () {
     // TableView
@@ -29,6 +30,9 @@
     NSString *appName = [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:@"CFBundleDisplayName"];
     self.title = appName;
 
+    // ナビゲーションの背景色を設定する
+    self.navigationController.view.backgroundColor = UIColor.whiteColor;
+    
     // TableViewDataSourceを初期化する
     sections = @[
         NSLocalizedString(@"page_section_basic", nil),
@@ -38,6 +42,7 @@
         @[
             NSLocalizedString(@"page_title_dialog", nil),
             NSLocalizedString(@"page_title_webview", nil),
+            NSLocalizedString(@"page_title_images", nil)
         ],
         @[
             NSLocalizedString(@"page_title_googlemaps", nil),
@@ -100,6 +105,12 @@
             case 1: {
                 // WebViewの表示
                 WebViewController *vc = [WebViewController alloc];
+                [self.navigationController pushViewController:vc animated:YES];
+                break;
+            }
+            case 2: {
+                // 画像の表示
+                ImageViewController *vc = [ImageViewController alloc];
                 [self.navigationController pushViewController:vc animated:YES];
             }
             default:

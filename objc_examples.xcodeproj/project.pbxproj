@@ -22,6 +22,7 @@
 		F5154295263ABDC100E8C516 /* objc_examplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5154294263ABDC100E8C516 /* objc_examplesUITests.m */; };
 		F54F3906263CFF39002F71FB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F3905263CFF39002F71FB /* WebViewController.m */; };
 		F54F390C263D02C3002F71FB /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */; };
+		F5524795263D39A3009F9F7C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5524794263D39A3009F9F7C /* ImageViewController.m */; };
 		F552991E263D1AC300B5CAF5 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = F552991D263D1AC300B5CAF5 /* .env */; };
 		F58116EC263AC0BA00468965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58116EE263AC0BA00468965 /* InfoPlist.strings */; };
 		F5811704263AC2A300468965 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5811706263AC2A300468965 /* Localizable.strings */; };
@@ -76,6 +77,8 @@
 		F54F3905263CFF39002F71FB /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		F54F390A263D02C3002F71FB /* GoogleMapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
 		F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
+		F5524793263D39A3009F9F7C /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		F5524794263D39A3009F9F7C /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		F552991D263D1AC300B5CAF5 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		F58116ED263AC0BA00468965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F58116F2263AC0BF00468965 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				F54F3905263CFF39002F71FB /* WebViewController.m */,
 				F54F390A263D02C3002F71FB /* GoogleMapsViewController.h */,
 				F54F390B263D02C3002F71FB /* GoogleMapsViewController.m */,
+				F5524793263D39A3009F9F7C /* ImageViewController.h */,
+				F5524794263D39A3009F9F7C /* ImageViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				F515426F263ABDC000E8C516 /* AppDelegate.m in Sources */,
 				F5154280263ABDC100E8C516 /* main.m in Sources */,
 				F54F390C263D02C3002F71FB /* GoogleMapsViewController.m in Sources */,
+				F5524795263D39A3009F9F7C /* ImageViewController.m in Sources */,
 				F5154272263ABDC000E8C516 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

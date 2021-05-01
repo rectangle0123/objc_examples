@@ -18,3 +18,4 @@ GOOGLE_MAPS_API_KEY=APIキー
 - ダイアログの表示
 - WebViewの表示
 - 現在地を取得してGoogleマップを表示する
+- 画像を表示する
