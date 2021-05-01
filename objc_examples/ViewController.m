@@ -16,6 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(20, 60, 200, 30);
+    label.text = NSLocalizedString(@"message", nil);
+    [self.view addSubview:label];
 }
 
 
