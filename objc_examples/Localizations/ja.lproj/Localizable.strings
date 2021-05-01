@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  objc_examples
+
+  Created by Yoshii Hiroki on 2021/04/29.
+  
+*/
+// ページ分類
+"page_section_basic" = "基本";
+"page_section_others" = "その他";
+
+// ページタイトル
+"page_title_dialog" = "ダイアログ";
+"page_title_webview" = "WebView";
+"page_title_googlemaps" = "Googleマップ";
+
+// ホーム画面
+"home_message" = "みなさん、こんにちわ！";
+
+// Googleマップ画面
+"gmaps_marker_title" = "日本橋駅";
+"gmaps_marker_snippet" = "東京";

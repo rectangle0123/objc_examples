@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  objc_examples
+
+  Created by Yoshii Hiroki on 2021/04/29.
+  
+*/
+// ページ分類
+"page_section_basic" = "Basic";
+"page_section_others" = "Others";
+
+// ページタイトル
+"page_title_dialog" = "Dialog";
+"page_title_webview" = "WebView";
+"page_title_googlemaps" = "Google Maps";
+
+// ホーム画面
+"home_message" = "Hello, World!";
+
+// Googleマップ画面
+"gmaps_marker_title" = "Nihonbashi Sta.";
+"gmaps_marker_snippet" = "Tokyo";
