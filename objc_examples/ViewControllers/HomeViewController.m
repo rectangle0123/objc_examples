@@ -56,6 +56,12 @@
     [self.view addSubview:tableView];
 }
 
+// デバイス回転で再描画する
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [tableView setFrame:self.view.bounds];
+}
+
 // ダイアログを表示する
 - (void)showDialog {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"home_dialog_title", nil) message:NSLocalizedString(@"home_dialog_message", nil) preferredStyle:UIAlertControllerStyleAlert];

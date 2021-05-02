@@ -35,4 +35,10 @@
     [webView loadRequest:request];
 }
 
+// デバイス回転で再描画する
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [webView setFrame:self.view.bounds];
+}
+
 @end

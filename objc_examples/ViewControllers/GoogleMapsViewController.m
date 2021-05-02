@@ -50,6 +50,12 @@
     marker.map = mapView;
 }
 
+// デバイス回転で再描画する
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [mapView setFrame:self.view.bounds];
+}
+
 #pragma mark - CLLocationManagerDelegate
 
 // ロケーションイベントの処理
